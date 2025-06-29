@@ -1,0 +1,20 @@
+[project]
+name = "calculator-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastmcp>=2.9.1",
+    "mcp[cli]>=1.10.1",
+]
+
+[project.scripts]
+calculator-mcp = "main:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["calculator_mcp"]
