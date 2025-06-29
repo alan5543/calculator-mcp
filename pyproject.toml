@@ -1,7 +1,7 @@
 [project]
 name = "calculator-mcp"
 version = "0.1.0"
-description = "Add your description here"
+description = "An advanced calculator MCP server with mathematical operations"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
@@ -10,11 +10,11 @@ dependencies = [
 ]
 
 [project.scripts]
-calculator-mcp = "main:main"
+calculator-mcp = "calculator_mcp.main:main"
 
 [build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
-[tool.setuptools]
+[tool.hatch.build.targets.wheel]
 packages = ["calculator_mcp"]

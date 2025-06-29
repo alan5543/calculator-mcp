@@ -1,8 +1,10 @@
 from mcp.server.fastmcp import FastMCP
 import math
+import os
 
 mcp = FastMCP("Advanced Calculator")
 
+# Existing tool definitions (unchanged)
 @mcp.tool()
 def add(a: int, b: int) -> int:
     """Add two numbers"""
@@ -123,8 +125,8 @@ def quadratic_roots(a: float, b: float, c: float) -> tuple:
         return (root1, root2)
 
 def main():
+    # port = int(os.getenv("PORT", 8080))
     mcp.run()
 
-
 if __name__ == "__main__":
-    mcp.run(transport='stdio')
+    main()
