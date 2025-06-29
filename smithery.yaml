@@ -1,9 +1,22 @@
+# smithery.yaml
+
+# Specify that you are deploying a custom container
 runtime: "container"
+
+# Instructions on how to build your Docker image
 build:
-  dockerfile: "Dockerfile"
-  dockerBuildPath: "."
+  dockerfile: "Dockerfile"       # Path to your Dockerfile
+  dockerBuildPath: "."           # The context path for the Docker build
+
+# Instructions on how to run your container
 startCommand:
-  type: "http"
+  type: "http"                   # Your server is an HTTP server
+  
+  # Define the configuration your server accepts.
+  # Since your calculator needs no keys, we define an empty schema.
   configSchema:
     type: "object"
     properties: {}
+  
+  # Provide an empty example configuration
+  exampleConfig: {}

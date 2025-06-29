@@ -125,8 +125,10 @@ def quadratic_roots(a: float, b: float, c: float) -> tuple:
         return (root1, root2)
 
 def main():
-    # port = int(os.getenv("PORT", 8080))
-    mcp.run()
+    # Read the port from the environment variable, defaulting to 8080 for local testing
+    port = int(os.environ.get("PORT", 8080))
+    # Run the server on 0.0.0.0 to make it accessible within the container environment
+    mcp.run(host="0.0.0.0", port=port)
 
 if __name__ == "__main__":
     main()
