@@ -1,2 +1,1 @@
 mcp[cli]>=1.9.4
-math

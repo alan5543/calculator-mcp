@@ -12,8 +12,12 @@ COPY . /app
 
 # Install python dependencies (use pip instead of pipenv/poetry for simplicity)
 RUN pip install --no-cache-dir -r <(grep -v "^#" pyproject.toml | grep -E '^[^\[]') || true
-# Instead, manually install dependencies
-RUN pip install --no-cache-dir mcp[cli]>=1.6.0
+
+# Copy requirements.txt first to leverage Docker cache
+COPY requirements.txt .
+
+# Install dependencies from requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose port if needed (not necessary for stdio transport)
 
