@@ -1,22 +1,14 @@
-# smithery.yaml
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
 
-# Specify that you are deploying a custom container
-runtime: "container"
-
-# Instructions on how to build your Docker image
-build:
-  dockerfile: "Dockerfile"       # Path to your Dockerfile
-  dockerBuildPath: "."           # The context path for the Docker build
-
-# Instructions on how to run your container
 startCommand:
-  type: "http"                   # Your server is an HTTP server
-  
-  # Define the configuration your server accepts.
-  # Since your calculator needs no keys, we define an empty schema.
+  type: stdio
   configSchema:
-    type: "object"
-    properties: {}
-  
-  # Provide an empty example configuration
-  exampleConfig: {}
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'python3',
+      args: ['main.py'],
+    })
