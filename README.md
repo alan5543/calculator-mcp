@@ -7,7 +7,10 @@ The Advanced Calculator MCP Server is a powerful tool designed to assist Large L
 
 ## Video Demo
 - Collaborating with Sequential Thinking to solve the complex Maths
-https://github.com/user-attachments/assets/c0690a93-c1fa-485d-a948-074e923e45da
+
+
+https://github.com/user-attachments/assets/02996c48-ed82-48c0-a529-79eb9fcf2ed5
+
 
 
 ## Tools
