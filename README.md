@@ -1,10 +1,14 @@
 # Advanced Calculator MCP Server
 [![smithery badge](https://smithery.ai/badge/@alan5543/calculator-mcp)](https://smithery.ai/server/@alan5543/calculator-mcp)
 
+
 ## Introduction
 The Advanced Calculator MCP Server is a powerful tool designed to assist Large Language Models (LLMs) in performing complex mathematical calculations. It provides a suite of mathematical functions that can be integrated with MCP-compatible clients (such as Claude Desktop) to enhance computational capabilities.
 
-[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/T-D1KVIuvjA)
+## Video Demo
+- Collaborating with Sequential Thinking to solve the complex Maths
+https://github.com/user-attachments/assets/c0690a93-c1fa-485d-a948-074e923e45da
+
 
 ## Tools
 The server provides the following mathematical tools with their exact names and arguments:
