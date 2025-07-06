@@ -4,6 +4,8 @@
 ## Introduction
 The Advanced Calculator MCP Server is a powerful tool designed to assist Large Language Models (LLMs) in performing complex mathematical calculations. It provides a suite of mathematical functions that can be integrated with MCP-compatible clients (such as Claude Desktop) to enhance computational capabilities.
 
+[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/T-D1KVIuvjA)
+
 ## Tools
 The server provides the following mathematical tools with their exact names and arguments:
 - `add(a: int, b: int) -> int`: Add two numbers
